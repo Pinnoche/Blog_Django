@@ -14,6 +14,15 @@
     </head>
     <body>
        <h1>Article List</h1>
+       <div class='article_list'>
+        <ul>
+            {% for article in articles %}
+            <li><a href="#">{{ article.title }}</a></li>
+            <li>{{ article.article }}</li>
+            <li>{{ article.date }}</li>    
+            {% endfor %}
+        </ul>
+       </div>
         
         <script src="" async defer></script>
     </body>
