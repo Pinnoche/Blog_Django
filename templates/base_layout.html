@@ -13,8 +13,10 @@
   </head>
   <body>
     <div class="wrapper">
-        {% block content %}
-        {% endblock %}
+      <h1>
+        <a href="{% url 'articles:list' %}"><img src="{% static 'pinnoche.jpg' %}" alt="Logo" width="50px" /></a>
+      </h1>
+      {% block content %} {% endblock %}
     </div>
   </body>
 </html>
